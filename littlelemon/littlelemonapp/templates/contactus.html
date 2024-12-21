@@ -11,5 +11,10 @@
     <p>Kaniyambadi, Vellore, Tamilnadu - 632102</p>
     <h2>Mobile</h2>
     <p>+91-96244 2654x</p>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_div}}
+        <input type="submit">
+    </form>
 </body>
 </html>
