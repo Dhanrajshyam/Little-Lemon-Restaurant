@@ -10,5 +10,5 @@ class ContactedCustomers(models.Model):
     is_responded = models.BooleanField(default= False, help_text= 'It shows whether we responded back on the customer request')
     responded_date = models.DateTimeField(help_text= 'Date on which we responded back to the customer', blank= True, null= True)
 
-    def __str__(self):
-        return self.customer_name
+    # def __str__(self):
+    #     return self.customer_name
